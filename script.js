@@ -22,11 +22,18 @@ for (let i = 0; i < iconBx.length; i++) {
 
         }
         document.getElementById(this.dataset.id).className = 'contentBx active';
-        console.log('clicou1')
-        
-
+       
     })
 }
+
+var lupapesquisa = al('.lupapesquisa');
+
+lupapesquisa.addEventListener('click', function(){
+  let pesquisainput = al('.pesquisa-input')
+});
+
+
+
 
 var carrinhoCompras = [];
 var corpoquantidade = 1;

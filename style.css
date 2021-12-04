@@ -342,6 +342,11 @@ footer {
 
 
 }
+.social-list{
+
+  display: flex;
+  justify-content: space-around;
+}
 
 .social-list a {
   color: rgb(10, 165, 43);
@@ -349,26 +354,19 @@ footer {
   padding-left: 3rem;
 }
 
-.social-list a:hover {
-  margin: -8rem;
-  color: rgb(113, 219, 136);
-  font-size: 1.5rem;
-}
+
 
 .social-list ul {
   display: flex;
-  justify-content: center;
+ ;
 }
 
 .social-list a #f {
 
-  color: rgb(39, 91, 233)
+  color: #f71c1c;
 }
 
-.social-list a #f:hover {
 
-  color: rgb(73, 118, 243)
-}
 
 .social-list a #i {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #d3ce92 5%, #fa7f74 45%, #ec08a4 60%, #285AEB 90%);
@@ -387,22 +385,22 @@ footer {
   padding: .5rem;
 }
 
-.social-media2 i {
-
-  font-size: .5rem;
+.social-media2 li a #is {
+  color: #6906aa; 
+  font-size: 1.8rem;
   border-radius: 40%;
 }
 
 .social-media2 #fa {
 
-  color: #3c49fa;
+  color: #f71c1c;
   transition: 1s;
 
 }
 
 .social-media2 #fa:hover {
 
-  color: #4491f5;
+  color: #f71c1c;
   transition: 1s;
 
 
