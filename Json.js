@@ -79,7 +79,7 @@ let arrayOb = [
     img: 'img/vestido9.jpg',
     preco: 50.00,
     tamanho: 'Unico',
-    descricao: 'Blusa Básica Com Amarras',
+    descricao: 'Blusa Básica Com Amarras Tamanho Único',
     
   },
   {
@@ -97,7 +97,7 @@ let arrayOb = [
     img: 'img/vestido11.jpg',
     preco: 50.00,
     tamanho: 'Unico',
-    descricao: ' Blusa, Básica Com Amarras ',
+    descricao: ' Blusa, Básica Com Amarras Tamanho Único',
   
   },
   {
