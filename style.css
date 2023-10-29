@@ -42,22 +42,16 @@
  }
 
  .cabecalho h1 {
-   position: absolute;
-   background-image: linear-gradient(to bottom, rgb(238, 31, 176), rgb(196, 37, 156), rgb(110, 13, 73));
-   color: black;
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   position: absolute;
-   font-size: 60px;
-   bottom: 10px;
-   font-family: var(--font3);
-   cursor: pointer;
-   left: 35%;
-   background-color: #000;
+  position: absolute;
+  color: black;
+  font-size: 60px;
+  bottom: 10px;
+  font-family: var(--font3);
+  cursor: pointer;
+  left: 35%;
+  text-shadow: 3px 3px 4px rgb(243, 7, 7);
+}
 
-
- }
 
  .cabecalho h1:hover {
    background-image: linear-gradient(to bottom, rgb(241, 236, 240), rgb(156, 152, 155), rgb(3, 3, 3));
@@ -495,7 +489,7 @@
    bottom: 50%;
    font-family: var(--font3);
    cursor: pointer;
-   left: 35%
+   left: 30%
  }
 
  .embreve h1:hover {
@@ -920,20 +914,13 @@
 
    .cabecalho h1 {
      position: absolute;
-     background-image: linear-gradient(to bottom, rgb(238, 31, 176), rgb(196, 37, 156), rgb(110, 13, 73));
-     color: black;
-     background-clip: text;
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     position: absolute;
-     font-size: 35px;
+     text-shadow: 3px 3px 4px rgb(243, 7, 7);
+     font-size: 30px;
      bottom: 20px;
      font-family: var(--font3);
      cursor: pointer;
-     left: 15%;
-     background-color: #000;
-
-
+     left: 14%;
+  
    }
 
 
