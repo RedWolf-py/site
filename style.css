@@ -48,7 +48,7 @@
   bottom: 10px;
   font-family: var(--font3);
   cursor: pointer;
-  left: 35%;
+  left: 30%;
   text-shadow: 3px 3px 4px rgb(243, 7, 7);
 }
 
@@ -1063,7 +1063,7 @@
    .footer-content p {
      font-family: var(--font-primary);
      color: white;
-     font-size: 1rem;
+     font-size: 0.8rem;
      display: flex;
      justify-content: center;
      padding-top: 1rem;
