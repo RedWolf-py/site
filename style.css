@@ -42,15 +42,15 @@
  }
 
  .cabecalho h1 {
-  position: absolute;
-  color: black;
-  font-size: 60px;
-  bottom: 10px;
-  font-family: var(--font3);
-  cursor: pointer;
-  left: 30%;
-  text-shadow: 3px 3px 4px rgb(243, 7, 7);
-}
+   position: absolute;
+   color: black;
+   font-size: 60px;
+   bottom: 10px;
+   font-family: var(--font3);
+   cursor: pointer;
+   left: 30%;
+   text-shadow: 3px 3px 4px rgb(243, 7, 7);
+ }
 
 
  .cabecalho h1:hover {
@@ -360,7 +360,6 @@
  }
 
  .social-list a #f {
-
    color: #f71c1c;
  }
 
@@ -866,8 +865,18 @@
    margin-top: 20px;
    border: 2px solid #ee0d0d;
    transition: all ease .2s;
-
  }
+
+ .carrinhoFinal,#carrinhotaga {
+   text-decoration: none;
+   color: #FFF;
+ }
+
+ .carrinhoFinal,#carrinhotaga:hover {
+  text-decoration: none;
+  color: black;
+}
+
 
  .carrinhoFinal:hover {
    background-color: white;
@@ -920,7 +929,7 @@
      font-family: var(--font3);
      cursor: pointer;
      left: 14%;
-  
+
    }
 
 
@@ -1153,29 +1162,30 @@
      margin-left: 0%;
      width: 95%;
      height: 36%;
-    
+
    }
 
    .precoProduto {
-    position: absolute;
-    font-size: 1.2rem;
-    width: 50%;
-    height: 40%;
-    margin-left: 50%;
-    margin-top: -5%;
-    display: inline-block;
+     position: absolute;
+     font-size: 1.2rem;
+     width: 50%;
+     height: 40%;
+     margin-left: 50%;
+     margin-top: -5%;
+     display: inline-block;
 
-  }
+   }
 
-  .valorProdutoLocal {
-    position: absolute;
-    font-size: 17px;
-    margin-left: 30%;
-    margin-top: 5%;
-    display: inline-block;
- 
+   .valorProdutoLocal {
+     position: absolute;
+     font-size: 17px;
+     margin-left: 30%;
+     margin-top: 5%;
+     display: inline-block;
 
-  }
+
+   }
+
    .produtoTpreco {
      position: absolute;
      font-size: 1.2rem;
@@ -1183,27 +1193,28 @@
      margin-top: -3%;
      display: inline-block;
    }
-   .valorUpdatebg {
-    position: absolute;
-    margin-left: 73%;
-    margin-top: 1%;
-    background-color: #EEE;
-    border-radius: 6px;
-    height: 25px;
-    width: 55px;
-  }
-  
-  .valorUpdatebg button {
-    border: 0;
-    background-color: transparent;
-    font-size: 16px;
-    outline: 0;
-    cursor: pointer;
-    padding: 0px 7px;
-    color: #333;
 
-  }
-  
+   .valorUpdatebg {
+     position: absolute;
+     margin-left: 73%;
+     margin-top: 1%;
+     background-color: #EEE;
+     border-radius: 6px;
+     height: 25px;
+     width: 55px;
+   }
+
+   .valorUpdatebg button {
+     border: 0;
+     background-color: transparent;
+     font-size: 16px;
+     outline: 0;
+     cursor: pointer;
+     padding: 0px 7px;
+     color: #333;
+
+   }
+
    .valorUpdate {
      line-height: 28px;
      font-size: 13px;

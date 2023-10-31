@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0
+}
+
+.pagamento {
+  margin-top: 4%;
+  position: absolute;
+  font-size: 2rem;
+  color: rgb(182, 8, 115);
+  text-align: center;
+  margin-left: 30%;
+  width: 600px;
+  height: 500px;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 4%;
+  background-color: rgb(245, 195, 226);
+
+}
+
+.pagamento p {
+  flex: 1;
+  padding: 3px;
+  color: rgb(182, 8, 115);
+  text-align: center;
+  font-size: 2rem;
+}
+
+#btncartao,
+#btnpix,
+#btnvoltar {
+  flex: 1;
+  margin-top: 10%;
+  padding: 10px;
+  color: rgb(241, 241, 241);
+  border-radius: 5px;
+  background-color: purple;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#btnvoltar a{
+  text-decoration: none;
+  color: rgb(241, 241, 241);
+}
+#btncartao:hover{
+  color:rgb(252, 247, 252);
+  background-color: rgb(202, 11, 116);
+  cursor: pointer;
+}
+#btnpix:hover { 
+  color:rgb(252, 247, 252);
+  background-color: rgb(202, 11, 116);
+  cursor: pointer;
+}
+
+#btnvoltar:hover{
+  color:rgb(252, 247, 252);
+  background-color: rgb(202, 11, 116);
+  cursor: pointer;
+}
+#qrcode {
+  position: absolute;
+  padding: 2px;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  color: thistle;
+  margin-left: 30%;
+}
+
+#msg {
+  position: absolute;
+  display: inline-block;
+  margin-top: 6%;
+  color: hsl(280, 50%, 40%);
+  font-size: 1.6rem;
+}
+
+#chave {
+  position: absolute;
+  display: inline-block;
+  margin-top: 3%;
+  color: red;
+  font-size: 1.2rem;
+}
+
+#qrcodeclass {
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  margin-top: 14%;
+  left: 8%;
+
+}
+
+.tela {
+  padding: 10px;
+  width: 400px;
+  height: 700px;
+  display: none;
+}
+
+#infor {
+  position: absolute;
+  color: black;
+  font-style: arial;
+  font-size: 0.8rem;
+  padding: 4px;
+  z-index: 3;
+  color: #ffffff;
+}
+
+.display {
+  position: absolute;
+  color: antiquewhite;
+  font-family: Arial;
+  left: 35%;
+  top: 8%;
+  transform: translate(-8%, -35%);
+  color: blueviolet;
+
+}
+
+.hformat {
+  position: absolute;
+  left: 40%;
+  top: 3%;
+  transform: translate(-3%, -40%);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(224, 8, 188);
+  font-size: 1.5rem;
+}
+
+.credit-card {
+  position: absolute;
+  color: antiquewhite;
+  font-family: Arial;
+
+}
+
+.credit-card .front,
+.credit-card .back {
+  background-color: hsl(280, 50%, 40%);
+  border: 1px solid hsl(270, 80%, 10%);
+  border-radius: .5rem;
+  width: 325px;
+  height: 150px;
+  padding: .75rem 1rem;
+  padding-bottom: 1.25rem;
+}
+
+.credit-card .front {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.credit-card .card-data-row {
+  display: flex;
+  margin-bottom: auto;
+}
+
+.credit-card .logo {
+  height: 40px;
+  width: 50px;
+  flex-grow: 0;
+  position: absolute;
+  margin-left: 78%;
+}
+
+.credit-card .brand-name {
+  position: absolute;
+  flex-grow: 1;
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 68%;
+  margin-top: 20%;
+
+}
+
+.logo-name {
+  flex-grow: 1;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-left: 75%;
+  margin-top: 20%;
+
+}
+
+
+
+.credit-card .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.credit-card fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.credit-card fieldset legend {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -200vh;
+}
+
+.credit-card .horizontal-input-stack {
+  display: flex;
+  gap: .5rem;
+}
+
+.credit-card .cc-inputs input {
+  width: 6ch;
+  font-family: monospace;
+}
+
+.credit-card input,
+.credit-card select {
+  padding: .25em .5em;
+  border: none;
+  border-radius: .25em;
+  appearance: none;
+}
+
+.credit-card label {
+  font-size: .65rem;
+  text-transform: uppercase;
+}
+
+.credit-card .input-row {
+  display: flex;
+  gap: 2rem;
+}
+
+.credit-card .input-group {
+  flex-grow: 1;
+}
+
+.credit-card .front::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  background-color: hsl(40, 10%, 100%, .15);
+  top: -250px;
+  left: -150px;
+  z-index: -1;
+}
+
+.credit-card .front::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 100%;
+  background-color: hsl(10, 10%, 100%, .095);
+  bottom: -475px;
+  left: -150px;
+  z-index: -1;
+}
+
+.credit-card .back {
+  position: absolute;
+  top: 2rem;
+  left: 3.25rem;
+}
+
+.credit-card .stripe {
+  background-color: hsl(200, 80%, 10%);
+  height: 35px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1.5rem;
+}
+
+.credit-card .cvc-group {
+  position: absolute;
+  bottom: 3.25rem;
+  right: .6rem;
+}
+
+.credit-card .cvc-input {
+  width: 5ch;
+  font-family: monospace;
+}
+
+
+.dadoPessoal {
+  position: absolute;
+  margin-top: 5%;
+  width: 100vh;
+}
+
+.dadoPessoal h3 {
+  color: rgb(224, 8, 188);
+  position: relative;
+  margin-top: 3%;
+  margin-left: 8%;
+  font-size: 1.4rem;
+
+}
+
+.form-input {
+  position: relative;
+  margin-top: 2%;
+  border: solid 1px black;
+  border-radius: 10px;
+  width: 60%;
+
+}
+
+.label-form {
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 10px;
+  transition: 0.2s ease all;
+  color: black;
+}
+
+
+
+.inputForm {
+  font-size: 18px;
+  padding: 18px;
+  display: block;
+  border: 1px solid #141111;
+  border-radius: 5px;
+  width: 50%;
+
+
+}
+
+.inputForm:focus {
+  outline: none;
+}
+
+.inputForm:focus+.label-form,
+.inputForm:valid+.label-form {
+  top: -13px;
+  font-size: 12px;
+  color: rgb(224, 8, 188);
+  cursor: pointer;
+
+}
+
+#enviarDados{
+  position:absolute;
+  top:100%;
+  background-color: hsl(280, 50%, 40%);
+  color: rgb(250, 248, 249);
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 45%;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+#enviarDados:hover{
+  color: #141111;
+  background-color: rgb(224, 8, 188);
+}
+
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(280, 18%, 97%);
+  color: rgb(224, 8, 188);
+  font-family: fantasy;
+  padding: 25px;
+  width: 300px;
+  border-radius: 15px;
+  display: none;
+  z-index: 9;
+}
+/*barra de download*/
+
+.download-bar {
+  position: relative;
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.progress-bar {
+  background-color: #f0f0f0;
+  height: 20px;
+  border: 1px solid #b40d6f;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #31af35;
+}
+

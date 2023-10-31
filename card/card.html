@@ -1,0 +1,145 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Cadastro Catao</title>
+</head>
+
+<body>
+
+  <div class="pagamento">
+    <p>Escolha O Método de Pagamento</p>
+    <button id="btncartao" onclick="pagamentoCartao()">Cartão de Crédito</button>
+    <button id="btnpix" onclick="pagamentoPix()">Pix</button>
+    <button id="btnvoltar"><a href="/index.html">Volta Para as Compras</a></button>
+  </div>
+  <div id="qrcode">
+    <h2 id="msg">Aproxima o Celular com o Aplicativo Do
+      Banco,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      Para ler o Qrcode.</h2>
+    <p id="chave"></p>
+    <div id="qrcodeclass">
+    </div>
+  </div>
+
+  <div class="tela">
+    <h2 class="hformat">Informação do Cartão</h2>
+    <div class="display">
+      <form class="credit-card">
+        <p id="infor">As informações do seu cartão de crédito estão<br> protegidas. As plataformas de pagamento são bem
+          cuidadosos com os seus dados.Nosso Site não terá <br>acesso às informações do seu cartão de crédito.
+        </p>
+        <div class="front">
+          <div class="card-data-row">
+            <div class="brand-name">CRÉDITO</div>
+            <img src="/card/img/mastercard.png" alt="" class="logo">
+          </div>
+          <fieldset class="form-group">
+            <legend>Numero do Cartao</legend>
+            <label for="cc-1">Numero do Cartao</label>
+            <div data-connected-inputs class="cc-inputs horizontal-input-stark">
+              <input type="tel" maxlength="4" aria-label="Credit Card Fist 4 Digits" id="cc-1" required
+                pattern="[0-9]{4}" />
+              <input type="tel" maxlength="4" aria-label="Credit Card Second 4 Digits" required pattern="[0-9]{4}" />
+              <input type="tel" maxlength="4" aria-label="Credit Card Third 4 Digits" required pattern="[0-9]{4}" />
+              <input type="tel" maxlength="4" aria-label="Credit Card Last 4 Digits" required pattern="[0-9]{4}" />
+            </div>
+          </fieldset>
+          <div class="input-row">
+            <div class="form-group name-group">
+              <label for="name">Nome Da Frente Do Seu Catão</label>
+              <input type="text" id="name" required>
+            </div>
+            <fieldset class="form-group">
+              <legend>Expiration</legend>
+              <label for="expiration-month">Validade</label>
+              <div class="horizontal-input-stark">
+                <select id="expiration-month" aria-label="expiration-month" required>
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+                  <option>05</option>
+                  <option>06</option>
+                  <option>07</option>
+                  <option>08</option>
+                  <option>09</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+                <select id="expiration-year" aria-label="expiration-Year" required data-expiration-year>
+
+                </select>
+              </div>
+
+            </fieldset>
+          </div>
+        </div>
+        <div class="back">
+          <div class="stripe"></div>
+          <div class="form-group cvc-group">
+            <label for="cvc">CVC</label>
+            <input class="cvc-input" type="tel" maxlength="3" id="cvc" required />
+          </div>
+        </div>
+        <div class="text-overlay">
+          <div class="download-bar">
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+          </div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Estamos Processando suas Compras:
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obrigado(a) Pela Preferência";
+        </div>
+        <div class="dadoPessoal">
+          <h3>Endereço de Cobrança</h3>
+
+          <div class="form-input">
+            <input class="inputForm" type="number" id="cep" required>
+            <label class="label-form" for="cep">Cep:</label>
+          </div>
+
+          <div class="form-input">
+            <input class="inputForm" type="text" id="rua" required>
+            <label class="label-form" for="rua">Rua Avenida:</label>
+          </div>
+
+          <div class="form-input">
+            <input class="inputForm" type="text" id="bairro" required>
+            <label class="label-form" for="bairro">Bairro:</label>
+          </div>
+
+          <div class="form-input">
+            <input class="inputForm" type="text" id="cidade" required>
+            <label class="label-form" for="cidade">Cidade:</label>
+          </div>
+
+          <div class="form-input">
+            <input class="inputForm" type="text" id="estado" required>
+            <label class="label-form" for="estado">Estado:</label>
+          </div>
+
+          <div class="form-input">
+            <input class="inputForm" type="number" id="numero" required>
+            <label class="label-form" for="numero">Número Da Casa ou Apto</label>
+          </div>
+
+          <div class="form-input">
+            <input class="inputForm" type="text" id="complemento" required>
+            <label class="label-form" for="complemento">Complemento (Apto, Bloco, etc)</label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <button id="enviarDados" onclick="limparCampos()">Confirmar</button>
+  </div>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="cep.js"></script>
+</body>
+
+</html>
