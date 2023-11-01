@@ -380,16 +380,37 @@
 
 }
 
-#enviarDados {
+#btnvoltarsiteCard {
   position: absolute;
-  top: 100%;
+  top: 98%;
   background-color: hsl(280, 50%, 40%);
   color: rgb(250, 248, 249);
   text-align: center;
   font-size: 1rem;
   cursor: pointer;
-  margin-left: 45%;
-  width: 100px;
+  margin-left: 36%;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+
+}
+
+#btnvoltarsiteCard:hover {
+  color: #141111;
+  background-color: rgb(224, 8, 188);
+}
+
+
+#enviarDados {
+  position: absolute;
+  top: 98%;
+  background-color: hsl(280, 50%, 40%);
+  color: rgb(250, 248, 249);
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 53%;
+  width: 120px;
   height: 40px;
   border-radius: 10px;
 }
@@ -443,19 +464,23 @@
 
 @media (max-width:840px) {
 
+  body {
+    display: flexbox;
+    justify-content: center;
+  }
 
   .pagamento {
     margin-top: 4%;
-    position: absolute;
+    display: flexbox;
     font-size: 2rem;
     color: rgb(218, 5, 111);
     text-align: center;
-    margin-left: 5%;
     width: 300px;
     height: 500px;
     border: 1px solid;
     padding: 10px;
     border-radius: 4%;
+    margin-left: 20px;
     background-color: rgb(245, 195, 226);
 
   }
@@ -581,8 +606,23 @@
     text-align: center;
     font-size: 1rem;
     cursor: pointer;
-    margin-left: 35%;
+    margin-left: 64%;
     width: 100px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+
+  #btnvoltarsiteCard {
+    position: absolute;
+    top: 90%;
+    background-color: hsl(280, 50%, 40%);
+    color: rgb(250, 248, 249);
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 3%;
+    width: 200px;
     height: 40px;
     border-radius: 10px;
   }
@@ -634,4 +674,5 @@
     padding: 8px;
     cursor: pointer;
   }
+
 }

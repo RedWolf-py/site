@@ -167,6 +167,12 @@ btnvoltarsite.addEventListener('click', ()=>{
   window.location.href = "/index.html"
 })
 
+const btnvoltarsiteCard = document.getElementById('btnvoltarsiteCard');
+
+btnvoltarsiteCard.addEventListener('click', ()=>{
+  window.location.href = "/index.html"
+})
+
 function limparCampos() {
   const campos = document.querySelectorAll(".credit-card input[type='text'], .credit-card input[type='number'],.credit-card input[type='tel']");
   campos.forEach((campo) => {
