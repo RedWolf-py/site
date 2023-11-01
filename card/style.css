@@ -41,26 +41,29 @@
   cursor: pointer;
 }
 
-#btnvoltar a{
+#btnvoltar a {
   text-decoration: none;
   color: rgb(241, 241, 241);
 }
-#btncartao:hover{
-  color:rgb(252, 247, 252);
-  background-color: rgb(202, 11, 116);
-  cursor: pointer;
-}
-#btnpix:hover { 
-  color:rgb(252, 247, 252);
+
+#btncartao:hover {
+  color: rgb(252, 247, 252);
   background-color: rgb(202, 11, 116);
   cursor: pointer;
 }
 
-#btnvoltar:hover{
-  color:rgb(252, 247, 252);
+#btnpix:hover {
+  color: rgb(252, 247, 252);
   background-color: rgb(202, 11, 116);
   cursor: pointer;
 }
+
+#btnvoltar:hover {
+  color: rgb(252, 247, 252);
+  background-color: rgb(202, 11, 116);
+  cursor: pointer;
+}
+
 #qrcode {
   position: absolute;
   padding: 2px;
@@ -95,6 +98,26 @@
   margin-top: 14%;
   left: 8%;
 
+}
+
+#btnvoltarsite {
+  position: absolute;
+  margin-top: 42%;
+  margin-left: 15%;
+  color: rgb(241, 241, 241);
+  border-radius: 10px;
+  background-color: purple;
+  text-align: center;
+  font-size: 1rem;
+  padding: 8px;
+  cursor: pointer;
+
+}
+
+#btnvoltarsite:hover {
+  color: rgb(240, 232, 232);
+  background-color: rgba(219, 26, 219, 0.877);
+  cursor: pointer;
 }
 
 .tela {
@@ -194,8 +217,6 @@
   margin-top: 20%;
 
 }
-
-
 
 .credit-card .form-group {
   display: flex;
@@ -359,9 +380,9 @@
 
 }
 
-#enviarDados{
-  position:absolute;
-  top:100%;
+#enviarDados {
+  position: absolute;
+  top: 100%;
   background-color: hsl(280, 50%, 40%);
   color: rgb(250, 248, 249);
   text-align: center;
@@ -373,7 +394,7 @@
   border-radius: 10px;
 }
 
-#enviarDados:hover{
+#enviarDados:hover {
   color: #141111;
   background-color: rgb(224, 8, 188);
 }
@@ -393,6 +414,7 @@
   display: none;
   z-index: 9;
 }
+
 /*barra de download*/
 
 .download-bar {
@@ -419,3 +441,197 @@
   background-color: #31af35;
 }
 
+@media (max-width:840px) {
+
+
+  .pagamento {
+    margin-top: 4%;
+    position: absolute;
+    font-size: 2rem;
+    color: rgb(218, 5, 111);
+    text-align: center;
+    margin-left: 5%;
+    width: 300px;
+    height: 500px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 4%;
+    background-color: rgb(245, 195, 226);
+
+  }
+
+  .pagamento p {
+    flex: 1;
+    padding: 3px;
+    color: rgb(182, 8, 115);
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  #btncartao,
+  #btnpix,
+  #btnvoltar {
+    flex: 1;
+    margin-top: 10%;
+    padding: 10px;
+    color: rgb(241, 241, 241);
+    border-radius: 5px;
+    background-color: purple;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .tela {
+    padding: 10px;
+    width: 260px;
+    height: 700px;
+    display: none;
+  }
+
+
+  #infor {
+    position: absolute;
+    font-style: arial;
+    font-size: 0.6rem;
+    padding: 2px;
+    z-index: 3;
+    color: #ffffff;
+  }
+
+  .display {
+    position: absolute;
+    color: antiquewhite;
+    font-family: Arial;
+    left: 3%;
+    top: 8%;
+    transform: translate(-8%, -4%);
+    color: blueviolet;
+
+  }
+
+
+  .credit-card .front,
+  .credit-card .back {
+    background-color: hsl(280, 50%, 40%);
+    border: 1px solid hsl(270, 80%, 10%);
+    border-radius: .5rem;
+    width: 250px;
+    height: 150px;
+    padding: .75rem 1rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .credit-card .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+  }
+
+  .hformat {
+    position: absolute;
+    left: 20%;
+    top: 3%;
+    transform: translate(-3%, -40%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(224, 8, 188);
+    font-size: 1.5rem;
+  }
+
+  .credit-card .brand-name {
+    position: absolute;
+    flex-grow: 1;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 68%;
+    margin-top: 20%;
+
+  }
+
+  .logo-name {
+    flex-grow: 1;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 50%;
+    margin-top: 20%;
+
+  }
+
+  .credit-card .logo {
+    height: 40px;
+    width: 50px;
+    flex-grow: 0;
+    position: absolute;
+    margin-left: 75%;
+  }
+
+  .dadoPessoal {
+    position: absolute;
+    margin-top: 5%;
+    width: 90vh;
+  }
+
+  #enviarDados {
+    position: absolute;
+    top: 90%;
+    background-color: hsl(280, 50%, 40%);
+    color: rgb(250, 248, 249);
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 35%;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  #qrcode {
+    position: absolute;
+    padding: 2px;
+    display: none;
+    color: thistle;
+    margin-left: 2%;
+  }
+
+  #msg {
+    position: absolute;
+    display: inline-block;
+    margin-top: 18%;
+    color: hsl(280, 50%, 40%);
+    font-size: 1.2rem;
+
+  }
+
+  #chave {
+    position: absolute;
+    display: inline-block;
+    margin-top: 3%;
+    color: red;
+    font-size: 1.2rem;
+  }
+
+  #qrcodeclass {
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-top: 40%;
+    left: 0%;
+
+  }
+
+  #btnvoltarsite {
+    position: absolute;
+    top: 55%;
+    left: 8%;
+    color: rgb(241, 241, 241);
+    border-radius: 10px;
+    background-color: purple;
+    text-align: center;
+    font-size: 1rem;
+    padding: 8px;
+    cursor: pointer;
+  }
+}

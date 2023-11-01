@@ -161,6 +161,11 @@ function pagamentoPix() {
 
 }
 
+const btnvoltarsite = document.getElementById('btnvoltarsite');
+
+btnvoltarsite.addEventListener('click', ()=>{
+  window.location.href = "/index.html"
+})
 
 function limparCampos() {
   const campos = document.querySelectorAll(".credit-card input[type='text'], .credit-card input[type='number'],.credit-card input[type='tel']");
